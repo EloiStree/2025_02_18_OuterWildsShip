@@ -49,7 +49,7 @@ public class OuterMono_ApplyForceToShip: MonoBehaviour {
         m_tiltLeftRightForce = -m_rightDownTopForce + m_leftDownTopForce;
 
         if (m_useRotation) 
-            r.AddRelativeTorque(new Vector3(0, 0, 1) * Time.deltaTime * m_tiltLeftRightForce * m_rotationForce, m_forceRotation);
+            r.AddRelativeTorque(new Vector3(0, 0, -1) * Time.deltaTime * m_tiltLeftRightForce * m_rotationForce, m_forceRotation);
 
         m_horizontalLeftRightSideForce = t.m_leftSide.m_motorPercentPower + -t.m_rightSide.m_motorPercentPower;
         if(m_useVelocity)

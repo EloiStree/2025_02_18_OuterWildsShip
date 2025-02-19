@@ -1,0 +1,23 @@
+
+{                                                                                
+  "name": "be.elab.outership",                              
+  "displayName": "Outer Wilds Ship for fun",                        
+  "version": "0.0.1",                         
+  "unity": "2018.1",                             
+  "unityRelease": "",                             
+  "description": "Just the Outer Wilds ship in Unity3d for the fun of it.",                         
+  "keywords": ["Script","Tool"],                       
+  "dependencies":{},     
+  "relatedPackages":{},     
+  "samples" : [],     
+  "author" : {
+"name":"",
+"mail":"",
+"url":""},     
+  "repository":{
+"type":"Git",
+"url":"https://github.com/EloiStree/2025_02_18_OuterWildsShip.git",
+"footprint":"",
+"revision":""},     
+  "category": "Script"                   
+} 

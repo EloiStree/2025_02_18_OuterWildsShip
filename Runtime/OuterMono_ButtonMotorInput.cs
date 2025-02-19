@@ -65,6 +65,7 @@ public class OuterMono_ButtonMotorInput : MonoBehaviour {
             if (m_inputAction == null)
                 return;
 
+            
             m_inputAction.action.Enable();
             m_inputAction.action.performed += ctx => Context(ctx);
             m_inputAction.action.started += ctx => Context(ctx);
@@ -80,7 +81,7 @@ public class OuterMono_ButtonMotorInput : MonoBehaviour {
             if (changed)
             {
                 m_axisValue = value;
-                m_onValueChanged.Invoke(m_axisValue);
+                m_onValueChanged?.Invoke(m_axisValue);
 
             }
         }

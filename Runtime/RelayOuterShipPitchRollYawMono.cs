@@ -1,7 +1,6 @@
 ﻿using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
-
 public class RelayOuterShipPitchRollYawMono : AbstractOuterShipPitchRollYawMono
 {
     public AbstractOuterShipPitchRollYawMono[] m_toRelayTo;

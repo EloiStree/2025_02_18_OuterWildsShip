@@ -24,6 +24,7 @@ public class OuterMono_ParticulePercent : MonoBehaviour
     }
     public void SetEmissionRate(double percent)
     {
+        m_percentPower =(float) percent;
         if (m_particleSystem != null)
         {
             float rate = m_emissionPerPercent.Evaluate((float)percent)* m_emissionMultiplicator;

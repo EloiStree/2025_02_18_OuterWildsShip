@@ -86,7 +86,7 @@
                 {
                     "name": "negative",
                     "id": "71abacd3-c93d-4cb6-a472-e0a170125fa1",
-                    "path": "<XInputController>/leftTrigger",
+                    "path": "<Gamepad>/leftTrigger",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -98,6 +98,39 @@
                     "name": "positive",
                     "id": "0eb056a7-0f7d-45e5-9a66-1478f308e951",
                     "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveMotorBackFront",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "1f5f5148-0949-403f-91b3-bb17d37689ff",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveMotorBackFront",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "3cdbc865-37da-47b4-a103-11177f853e91",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveMotorBackFront",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "e987bfda-0d09-4fe6-9cd9-81acc877b690",
+                    "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -249,6 +282,39 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "1D Axis",
+                    "id": "bf92ec1f-0e19-4d9b-9a31-0f732500a03e",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AirRotationRollLeftRight",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "ac5ec3ac-8c54-4fed-a61e-438e9dccaf74",
+                    "path": "<Keyboard>/ctrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AirRotationRollLeftRight",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "b60742be-a484-4d8d-8513-71bb88b27cc1",
+                    "path": "<Keyboard>/alt",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AirRotationRollLeftRight",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "",
                     "id": "ad89baf5-9294-4b80-bee4-09831c3dc581",
                     "path": "<Gamepad>/leftStick/x",
@@ -260,6 +326,39 @@
                     "isPartOfComposite": false
                 },
                 {
+                    "name": "1D Axis",
+                    "id": "02d91866-7f43-4575-9c13-8d23bc7993a6",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveMotorLeftRight",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "0f380c7f-9b3a-4316-9532-b338e06107c8",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveMotorLeftRight",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "f47ef2f2-5996-4482-9ba9-ea38ff02dffa",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveMotorLeftRight",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "",
                     "id": "f336fa90-b958-4178-9714-a3f53dddfb98",
                     "path": "<Gamepad>/leftStick/y",
@@ -269,6 +368,39 @@
                     "action": "MoveMotorDownTop",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "3eae50c3-db3f-4c00-9f11-f304c7cf4729",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveMotorDownTop",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "abe21b74-2fe8-48ab-b9d8-b5bbaa6ab81d",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveMotorDownTop",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "c9ba267c-461d-4153-93ca-87b1184a44bf",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveMotorDownTop",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 }
             ]
         },
@@ -403,8 +535,30 @@
                 },
                 {
                     "name": "",
+                    "id": "a7ee52f9-f2e0-47d5-8296-60eccf491262",
+                    "path": "<Keyboard>/numpadDivide",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftMotorUp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "11d79865-6a5d-446f-b720-83b54994ec81",
                     "path": "<Keyboard>/j",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftMotorDown",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d82c7ae0-c042-45b2-8ded-c46b79e25217",
+                    "path": "<Keyboard>/numpadMinus",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -447,8 +601,30 @@
                 },
                 {
                     "name": "",
+                    "id": "7f78c527-78c9-4973-9c87-28243662aae3",
+                    "path": "<Keyboard>/numpadMultiply",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightMotorUp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "7200ca61-a075-461a-8d09-55c0df1bf897",
                     "path": "<Keyboard>/l",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightMotorDown",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f951a6f6-339d-4292-b773-dbc271c67a4d",
+                    "path": "<Keyboard>/numpadPlus",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -510,6 +686,17 @@
                     "name": "",
                     "id": "f5a85089-6f86-4f00-afc9-739dc7795d39",
                     "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "StopVelocityOfShip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d0de92b0-ffd8-46d4-8b4e-ca8232cbcf26",
+                    "path": "",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

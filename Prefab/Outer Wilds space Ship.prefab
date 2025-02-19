@@ -345,7 +345,7 @@ MonoBehaviour:
       m_axisValue: 0
     m_leftBack:
       m_inputAction: {fileID: 7415367034931866823, guid: c90c0f6d58b84264f8f9321af98be936, type: 3}
-      m_axisValue: 0.587
+      m_axisValue: 0
     m_leftTop:
       m_inputAction: {fileID: 7298329226386300207, guid: c90c0f6d58b84264f8f9321af98be936, type: 3}
       m_axisValue: 0
@@ -353,7 +353,7 @@ MonoBehaviour:
       m_inputAction: {fileID: 4809419340336332572, guid: c90c0f6d58b84264f8f9321af98be936, type: 3}
       m_axisValue: 0
     m_leftSide:
-      m_inputAction: {fileID: -246471108876079988, guid: 97952c144ff42804d9e77c3cba17c387, type: 3}
+      m_inputAction: {fileID: 7272254158559315718, guid: c90c0f6d58b84264f8f9321af98be936, type: 3}
       m_axisValue: 0
     m_rightFront:
       m_inputAction: {fileID: -4027232820464396200, guid: c90c0f6d58b84264f8f9321af98be936, type: 3}

@@ -84,7 +84,7 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "negative",
+                    "name": "Negative",
                     "id": "71abacd3-c93d-4cb6-a472-e0a170125fa1",
                     "path": "<Gamepad>/leftTrigger",
                     "interactions": "",
@@ -107,7 +107,7 @@
                 },
                 {
                     "name": "1D Axis",
-                    "id": "1f5f5148-0949-403f-91b3-bb17d37689ff",
+                    "id": "0f3344dc-bb5e-4034-8540-83dfcb47e0fe",
                     "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
@@ -118,8 +118,8 @@
                 },
                 {
                     "name": "negative",
-                    "id": "3cdbc865-37da-47b4-a103-11177f853e91",
-                    "path": "<Mouse>/rightButton",
+                    "id": "ee480e3b-2258-4d00-86b3-c412873f2fb2",
+                    "path": "<Gamepad>/dpad/down",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -129,8 +129,8 @@
                 },
                 {
                     "name": "positive",
-                    "id": "e987bfda-0d09-4fe6-9cd9-81acc877b690",
-                    "path": "<Mouse>/leftButton",
+                    "id": "0b7d0648-d8ba-41ec-8197-d60e81f0d662",
+                    "path": "<Gamepad>/dpad/up",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -250,39 +250,6 @@
                 },
                 {
                     "name": "1D Axis",
-                    "id": "78fa192a-760d-4531-87e7-ec5777bfaf7c",
-                    "path": "1DAxis",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "AirRotationRollLeftRight",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "negative",
-                    "id": "3cad7cee-34d4-4c31-8733-ad84ee0e02a7",
-                    "path": "<Gamepad>/leftShoulder",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "AirRotationRollLeftRight",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "positive",
-                    "id": "04fb087e-4f39-4aa5-acd2-da3232479a2f",
-                    "path": "<Gamepad>/rightShoulder",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "AirRotationRollLeftRight",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "1D Axis",
                     "id": "bf92ec1f-0e19-4d9b-9a31-0f732500a03e",
                     "path": "1DAxis",
                     "interactions": "",
@@ -307,6 +274,39 @@
                     "name": "positive",
                     "id": "b60742be-a484-4d8d-8513-71bb88b27cc1",
                     "path": "<Keyboard>/alt",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AirRotationRollLeftRight",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "83d0c62b-e59e-469c-b5ab-f8be86533209",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AirRotationRollLeftRight",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "cc56625a-c3ce-413e-97e0-0543add22234",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AirRotationRollLeftRight",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "983d0299-0aee-469c-a22e-26cf9be7e5f5",
+                    "path": "<Gamepad>/rightShoulder",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -359,6 +359,39 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "1D Axis",
+                    "id": "f96ff40e-7e1d-430a-aa44-bfdba27c4968",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveMotorLeftRight",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "bb0c40f0-7d10-4d29-a3b0-4a1dbe579c3f",
+                    "path": "<Gamepad>/dpad/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveMotorLeftRight",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "61174dab-e089-495f-b047-888e3969ddca",
+                    "path": "<Gamepad>/dpad/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveMotorLeftRight",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "",
                     "id": "f336fa90-b958-4178-9714-a3f53dddfb98",
                     "path": "<Gamepad>/leftStick/y",
@@ -401,6 +434,17 @@
                     "action": "MoveMotorDownTop",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "660c7303-1257-4ed2-a499-fda8a7ed3be6",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveMotorDownTop",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },

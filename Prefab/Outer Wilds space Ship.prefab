@@ -1220,7 +1220,7 @@ MonoBehaviour:
     m_inputAction: {fileID: -2144501498308845904, guid: c90c0f6d58b84264f8f9321af98be936, type: 3}
     m_axisValue: 0
     m_inverse: 0
-  m_moveFrontToBack:
+  m_moveBackToFront:
     m_inputAction: {fileID: 7087472779740124301, guid: c90c0f6d58b84264f8f9321af98be936, type: 3}
     m_axisValue: 0
     m_inverse: 0

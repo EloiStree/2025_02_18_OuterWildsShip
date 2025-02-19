@@ -42,7 +42,7 @@ public class OuterMono_JoystickInputFloat: MonoBehaviour
     public AbstractOuterShipMotorPercentMono m_combusionMotors;
 
     public AxisInput m_moveLeftToRight;
-    public AxisInput m_moveFrontToBack;
+    public AxisInput m_moveBackToFront;
     public AxisInput m_moveDownUp;
 
     public AxisInput m_airRotateYawLeftToRight;
@@ -55,7 +55,7 @@ public class OuterMono_JoystickInputFloat: MonoBehaviour
     private void OnEnable()
     {
         m_moveLeftToRight.EnableIt();
-        m_moveFrontToBack.EnableIt();
+        m_moveBackToFront.EnableIt();
         m_moveDownUp.EnableIt();
         m_airRotateYawLeftToRight.EnableIt();
         m_airRotatePitchDownToUp.EnableIt();
@@ -63,7 +63,12 @@ public class OuterMono_JoystickInputFloat: MonoBehaviour
 
         m_motorValue.Clear();
 
-        m_airRotatePitchDownToUp.m_onValueChanged += m_airPushMotors.SetPitchDownToTop;
+        m_airRotatePitchDownToUp.m_onValueChanged +=(pct)=>{
+
+            m_airPushMotors.SetPitchDownToTop(pct);
+
+            Refresh();
+        };
         m_airRotateYawLeftToRight.m_onValueChanged += (pct) =>
         {
             m_airPushMotors.SetYawLeftToRight(pct);
@@ -71,6 +76,7 @@ public class OuterMono_JoystickInputFloat: MonoBehaviour
             m_motorValue.m_leftBack = pct * 0.5f;
             m_motorValue.m_rightFront = pct * 0.5f;
             m_motorValue.m_rightBack = -pct * 0.5f;
+        Refresh();
         };
         m_airRotateRollLeftToRight.m_onValueChanged += (pct) =>
         {
@@ -79,6 +85,7 @@ public class OuterMono_JoystickInputFloat: MonoBehaviour
             m_motorValue.m_leftTop = -pct * 0.5f;
             m_motorValue.m_rightDown = -pct * 0.5f;
             m_motorValue.m_rightTop = pct * 0.5f;
+        Refresh();
 
         };
 
@@ -86,13 +93,15 @@ public class OuterMono_JoystickInputFloat: MonoBehaviour
         m_moveLeftToRight.m_onValueChanged += (pct) => {
             m_motorValue.m_leftSide = pct;
             m_motorValue.m_rightSide = -pct;
+        Refresh();
         };
         
-        m_moveFrontToBack.m_onValueChanged += (pct) => {
-            m_motorValue.m_leftFront = pct*0.5f;
-            m_motorValue.m_rightFront = pct * 0.5f;
+        m_moveBackToFront.m_onValueChanged += (pct) => {
+            m_motorValue.m_leftFront = -pct*0.5f;
+            m_motorValue.m_rightFront = -pct * 0.5f;
             m_motorValue.m_leftBack = pct * 0.5f;
             m_motorValue.m_rightBack = pct * 0.5f;
+        Refresh();
         };
 
         m_moveDownUp.m_onValueChanged += (pct) =>
@@ -101,7 +110,12 @@ public class OuterMono_JoystickInputFloat: MonoBehaviour
             m_motorValue.m_rightDown = pct * 0.5f;
             m_motorValue.m_leftTop = -pct * 0.5f;
             m_motorValue.m_rightTop = -pct * 0.5f;
+        Refresh();
         };
+        Refresh();
+    }
+
+    public void Refresh(){
         m_combusionMotors.SetMotorPercentLeftSide(m_motorValue.m_leftSide);
         m_combusionMotors.SetMotorPercentRightSide(m_motorValue.m_rightSide);
         m_combusionMotors.SetMotorPercentLeftFront(m_motorValue.m_leftFront);
@@ -112,12 +126,13 @@ public class OuterMono_JoystickInputFloat: MonoBehaviour
         m_combusionMotors.SetMotorPercentRightTop(m_motorValue.m_rightTop);
         m_combusionMotors.SetMotorPercentLeftDown(m_motorValue.m_leftDown);
         m_combusionMotors.SetMotorPercentRightDown(m_motorValue.m_rightDown);
+
     }
 
     private void OnDisable()
     {
         m_moveLeftToRight.DisableIt();
-        m_moveFrontToBack.DisableIt();
+        m_moveBackToFront.DisableIt();
         m_moveDownUp.DisableIt();
         m_airRotateYawLeftToRight.DisableIt();
         m_airRotatePitchDownToUp.DisableIt();

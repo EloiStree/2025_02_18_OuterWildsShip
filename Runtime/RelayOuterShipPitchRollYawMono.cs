@@ -25,6 +25,7 @@ public class RelayOuterShipPitchRollYawMono : AbstractOuterShipPitchRollYawMono
     }
     public override void SetPitchDownToTop(float percent)
     {
+        m_downUpRotationWanted =percent;
         percent = Mathf.Clamp(percent, -1f, 1f);
         foreach (var item in m_toRelayTo)
         {
@@ -35,6 +36,7 @@ public class RelayOuterShipPitchRollYawMono : AbstractOuterShipPitchRollYawMono
 
     public override void SetRollLeftToRight(float percent)
     {
+        m_rollLeftRightWanted=percent;
         percent = Mathf.Clamp(percent, -1f, 1f);
         foreach (var item in m_toRelayTo)
         {
@@ -45,6 +47,7 @@ public class RelayOuterShipPitchRollYawMono : AbstractOuterShipPitchRollYawMono
 
     public override void SetYawLeftToRight(float percent)
     {
+        m_leftRightRotationWanted=percent;
         percent = Mathf.Clamp(percent, -1f, 1f);
         foreach (var item in m_toRelayTo)
         {

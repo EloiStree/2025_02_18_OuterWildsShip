@@ -552,6 +552,7 @@ Transform:
   m_Children:
   - {fileID: 2842512019525709702}
   - {fileID: 8821125386799429737}
+  - {fileID: 5174765167673708784}
   m_Father: {fileID: 4132450901686571691}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2243868564090809815
@@ -755,6 +756,52 @@ MonoBehaviour:
   m_rightSide:
     m_motorPercentPower: 0
     m_motorPoint: {fileID: 666424747521619448}
+--- !u!1 &3366128789387466716
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5174765167673708784}
+  - component: {fileID: 2759747594498129394}
+  m_Layer: 0
+  m_Name: Stop Rigidbody Panic button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5174765167673708784
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3366128789387466716}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 770545133141137726}
+  m_Father: {fileID: 3124254588555660586}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2759747594498129394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3366128789387466716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dc8856146a737840aa6ec45736e7975, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_targetRigidbody: {fileID: 8009278712932132179}
 --- !u!1 &3455987168395797073
 GameObject:
   m_ObjectHideFlags: 0
@@ -1463,6 +1510,73 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &8895915478636132976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 770545133141137726}
+  - component: {fileID: 1080208164859450063}
+  m_Layer: 0
+  m_Name: Key
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &770545133141137726
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8895915478636132976}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5174765167673708784}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1080208164859450063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8895915478636132976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cc30a5b8c50d0c4299133b4ed553254, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_inputAction: {fileID: 5745495049748120525, guid: c90c0f6d58b84264f8f9321af98be936, type: 3}
+  m_onChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onDown:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2759747594498129394}
+        m_TargetAssemblyTypeName: OuterMono_PanicRigidbodyStop, be.elab.outership
+        m_MethodName: StopVelocity
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_onUp:
+    m_PersistentCalls:
+      m_Calls: []
+  m_isPressed: 0
 --- !u!1 &8978530071626563936
 GameObject:
   m_ObjectHideFlags: 0

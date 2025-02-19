@@ -166,9 +166,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_target: {fileID: 5370817619044133992}
   m_whatToMove: {fileID: 402723498}
-  m_lerpSpeedMove: 0.2
-  m_lerpSpeedRotate: 0.65
-  m_useLateUpdate: 1
+  m_lerpSpeedMove: 5
+  m_lerpSpeedRotate: 1
+  m_useLateUpdate: 0
 --- !u!1 &888172797
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,7 +449,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4132450901686571691, guid: a88f07d55b5ea5e40b0489d078abf969, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.2194
       objectReference: {fileID: 0}
     - target: {fileID: 4132450901686571691, guid: a88f07d55b5ea5e40b0489d078abf969, type: 3}
       propertyPath: m_LocalRotation.w
@@ -477,14 +477,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4132450901686571691, guid: a88f07d55b5ea5e40b0489d078abf969, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6929120284545781074, guid: a88f07d55b5ea5e40b0489d078abf969, type: 3}
-      propertyPath: m_percentPower
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7183056861118912694, guid: a88f07d55b5ea5e40b0489d078abf969, type: 3}
-      propertyPath: m_percentPower
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

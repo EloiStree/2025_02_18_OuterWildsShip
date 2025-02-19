@@ -479,6 +479,45 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "OutWildAlterTool",
+            "id": "f3f15be5-6c3a-4242-8831-94905723f388",
+            "actions": [
+                {
+                    "name": "StopVelocityOfShip",
+                    "type": "Button",
+                    "id": "044bbff8-02ab-434f-8c72-81f912e767c7",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "19ddaafc-9858-4f65-82ef-173e7f26ff06",
+                    "path": "<Keyboard>/n",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "StopVelocityOfShip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f5a85089-6f86-4f00-afc9-739dc7795d39",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "StopVelocityOfShip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []

@@ -1,14 +1,16 @@
-
-{                                                                   
-            "name": "be.elab.outership",          
+{
+    "name": "be.elab.outership",
+    "rootNamespace": "",
     "references": [
-],                                                              
-    "optionalUnityReferences": [],                                  
-    "includePlatforms": [],                                                  
-    "excludePlatforms": [],                                         
-    "allowUnsafeCode": false,                                       
-    "overrideReferences": false,                                    
-    "precompiledReferences": [],                                    
-    "autoReferenced": true,                                         
-    "defineConstraints": []                                         
-}                                                                   
+        "Unity.InputSystem"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

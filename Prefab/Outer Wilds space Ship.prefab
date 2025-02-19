@@ -108,6 +108,39 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &382063252055490215
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6251674280841056300}
+  m_Layer: 0
+  m_Name: Default Input
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6251674280841056300
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382063252055490215}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 967080017315551447}
+  - {fileID: 7987560246235674235}
+  m_Father: {fileID: 4132450901686571691}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &431918232660182508
 GameObject:
   m_ObjectHideFlags: 0
@@ -261,6 +294,93 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_motors: {fileID: 8712478536093428981}
+--- !u!1 &524000224924422450
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7987560246235674235}
+  - component: {fileID: 8213990386231310960}
+  m_Layer: 0
+  m_Name: Buttons
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7987560246235674235
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524000224924422450}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6251674280841056300}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8213990386231310960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524000224924422450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dc8b6932a120204992431ba98a279d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_combusionMotors: {fileID: 713053265955008212}
+  m_inputs:
+    m_leftFront:
+      m_inputAction: {fileID: -3993264901936935159, guid: c90c0f6d58b84264f8f9321af98be936, type: 3}
+      m_axisValue: 0
+    m_leftBack:
+      m_inputAction: {fileID: 7415367034931866823, guid: c90c0f6d58b84264f8f9321af98be936, type: 3}
+      m_axisValue: 0.587
+    m_leftTop:
+      m_inputAction: {fileID: 7298329226386300207, guid: c90c0f6d58b84264f8f9321af98be936, type: 3}
+      m_axisValue: 0
+    m_leftDown:
+      m_inputAction: {fileID: 4809419340336332572, guid: c90c0f6d58b84264f8f9321af98be936, type: 3}
+      m_axisValue: 0
+    m_leftSide:
+      m_inputAction: {fileID: -246471108876079988, guid: 97952c144ff42804d9e77c3cba17c387, type: 3}
+      m_axisValue: 0
+    m_rightFront:
+      m_inputAction: {fileID: -4027232820464396200, guid: c90c0f6d58b84264f8f9321af98be936, type: 3}
+      m_axisValue: 0
+    m_rightBack:
+      m_inputAction: {fileID: -3371772423243513008, guid: c90c0f6d58b84264f8f9321af98be936, type: 3}
+      m_axisValue: 0
+    m_rightTop:
+      m_inputAction: {fileID: 5883547462964703714, guid: c90c0f6d58b84264f8f9321af98be936, type: 3}
+      m_axisValue: 0
+    m_rightDown:
+      m_inputAction: {fileID: 6766423721000432162, guid: c90c0f6d58b84264f8f9321af98be936, type: 3}
+      m_axisValue: 0
+    m_rightSide:
+      m_inputAction: {fileID: -8275328878983828115, guid: c90c0f6d58b84264f8f9321af98be936, type: 3}
+      m_axisValue: 0
+  m_motorValue:
+    m_leftFront: 0
+    m_leftBack: 0
+    m_leftTop: 0
+    m_leftDown: 0
+    m_leftSide: 0
+    m_rightFront: 0
+    m_rightBack: 0
+    m_rightTop: 0
+    m_rightDown: 0
+    m_rightSide: 0
 --- !u!1 &555820063770122043
 GameObject:
   m_ObjectHideFlags: 0
@@ -270,6 +390,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4132450901686571691}
+  - component: {fileID: 3018394230137631986}
   - component: {fileID: 713053265955008212}
   - component: {fileID: 8009278712932132179}
   - component: {fileID: 83753502934674906}
@@ -296,8 +417,36 @@ Transform:
   - {fileID: 6236411463762214751}
   - {fileID: 7240484936373132329}
   - {fileID: 3124254588555660586}
+  - {fileID: 6251674280841056300}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3018394230137631986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555820063770122043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00423fc694802c0438e16962abbfda10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_toRelayTo:
+  - {fileID: 3336287311786917257}
+  m_leftRightRotationWanted: 0
+  m_downUpRotationWanted: 0
+  m_rollLeftRightWanted: 0
+  m_onPitchRelayed:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onRollRelayed:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onYawRelayed:
+    m_PersistentCalls:
+      m_Calls: []
+  m_useValide: 0
 --- !u!114 &713053265955008212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -938,6 +1087,87 @@ MonoBehaviour:
   m_leftRightRotationCurrent: 0
   m_downUpRotationCurrent: 0
   m_rollLeftRightCurrent: 0
+--- !u!1 &6286166291580003561
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 967080017315551447}
+  - component: {fileID: 6189042227078765860}
+  m_Layer: 0
+  m_Name: Joystick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &967080017315551447
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6286166291580003561}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6251674280841056300}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6189042227078765860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6286166291580003561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a472c5e3a18421a45908cd496f97647f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_airPushMotors: {fileID: 3018394230137631986}
+  m_combusionMotors: {fileID: 713053265955008212}
+  m_moveLeftToRight:
+    m_inputAction: {fileID: -2144501498308845904, guid: c90c0f6d58b84264f8f9321af98be936, type: 3}
+    m_axisValue: 0
+    m_inverse: 0
+  m_moveFrontToBack:
+    m_inputAction: {fileID: 7087472779740124301, guid: c90c0f6d58b84264f8f9321af98be936, type: 3}
+    m_axisValue: 0
+    m_inverse: 0
+  m_moveDownUp:
+    m_inputAction: {fileID: -2457023141240222231, guid: c90c0f6d58b84264f8f9321af98be936, type: 3}
+    m_axisValue: 0
+    m_inverse: 0
+  m_airRotateYawLeftToRight:
+    m_inputAction: {fileID: -258008472732331677, guid: c90c0f6d58b84264f8f9321af98be936, type: 3}
+    m_axisValue: 0
+    m_inverse: 0
+  m_airRotatePitchDownToUp:
+    m_inputAction: {fileID: -5232052294434656813, guid: c90c0f6d58b84264f8f9321af98be936, type: 3}
+    m_axisValue: 0
+    m_inverse: 1
+  m_airRotateRollLeftToRight:
+    m_inputAction: {fileID: 6996474420225183665, guid: c90c0f6d58b84264f8f9321af98be936, type: 3}
+    m_axisValue: 0
+    m_inverse: 0
+  m_motorValue:
+    m_leftFront: 0
+    m_leftBack: 0
+    m_leftTop: 0
+    m_leftDown: 0
+    m_leftSide: 0
+    m_rightFront: 0
+    m_rightBack: 0
+    m_rightTop: 0
+    m_rightDown: 0
+    m_rightSide: 0
 --- !u!1 &6442632228392595882
 GameObject:
   m_ObjectHideFlags: 0

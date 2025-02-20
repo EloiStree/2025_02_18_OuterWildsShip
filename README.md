@@ -11,3 +11,9 @@ The goal is to create a short lesson of less than five minutes that you can foll
 There are additional packages for time management, music, and subtitles available in the Git repository.  
 
 For fun, create a **fan art** of *Outer Wilds*! 🚀✨
+
+
+-----------------------
+
+- Asset et Pro Builder https://github.com/EloiStree/2024_07_19_CharleroiStreetAR/issues/167
+- Sky Riding and et temps: https://github.com/EloiStree/2024_07_19_CharleroiStreetAR/issues/197

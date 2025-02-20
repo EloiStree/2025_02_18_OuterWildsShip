@@ -140,6 +140,39 @@
                 },
                 {
                     "name": "1D Axis",
+                    "id": "06b9b315-86bd-43a8-a6d2-1331cc2e2601",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveMotorBackFront",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "ab32dcc6-5655-421d-b943-bd96c849ec91",
+                    "path": "<XRController>{LeftHand}/{Trigger}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveMotorBackFront",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "244a0ccf-3b32-46fd-a686-a3203fd97f4f",
+                    "path": "<XRController>{RightHand}/{Trigger}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveMotorBackFront",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "1D Axis",
                     "id": "a399156a-8048-45a8-b7a9-4075d037daf6",
                     "path": "1DAxis",
                     "interactions": "",
@@ -170,6 +203,17 @@
                     "action": "AirRotationYawLeftRight",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "2a4f4721-85b0-4e28-964e-8128f78ce3ab",
+                    "path": "<OculusTouchController>{RightHand}/thumbstick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AirRotationYawLeftRight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 },
                 {
                     "name": "",
@@ -214,6 +258,17 @@
                     "action": "AirRotationPitchDownUp",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "cde1cc5b-520b-44fa-bc6b-b5316c8ec7bc",
+                    "path": "<OculusTouchController>{RightHand}/thumbstick/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AirRotationPitchDownUp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 },
                 {
                     "name": "1D Axis",
@@ -315,6 +370,39 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "1D Axis",
+                    "id": "7b22398d-9231-419c-8ef2-3b98815f1830",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AirRotationRollLeftRight",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "67f64a47-c28b-4a38-b7d8-c2767288ed40",
+                    "path": "<XRController>{LeftHand}/{Thumbrest}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AirRotationRollLeftRight",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "cb0da341-f28e-4430-8573-3b736f531c1a",
+                    "path": "<XRController>{RightHand}/{Thumbrest}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AirRotationRollLeftRight",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "",
                     "id": "ad89baf5-9294-4b80-bee4-09831c3dc581",
                     "path": "<Gamepad>/leftStick/x",
@@ -393,6 +481,17 @@
                 },
                 {
                     "name": "",
+                    "id": "efe31e95-ff52-493c-8d14-8639238752c1",
+                    "path": "<XRInputV1::Oculus::OculusTouchControllerLeft>{LeftHand}/thumbstick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveMotorLeftRight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "f336fa90-b958-4178-9714-a3f53dddfb98",
                     "path": "<Gamepad>/leftStick/y",
                     "interactions": "",
@@ -438,7 +537,7 @@
                 {
                     "name": "",
                     "id": "660c7303-1257-4ed2-a499-fda8a7ed3be6",
-                    "path": "",
+                    "path": "<OculusTouchController>{LeftHand}/thumbstick/y",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -712,6 +811,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "QuitTheGame",
+                    "type": "Button",
+                    "id": "47899ff5-e8f5-44fa-a4b7-9c15535cbc2c",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -745,6 +853,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "StopVelocityOfShip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bf614b9c-57e9-4b98-928d-016e0679430e",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "QuitTheGame",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "db62714b-9e83-411c-9ca2-531a1b0b4ad4",
+                    "path": "<Gamepad>/{Back}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "QuitTheGame",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

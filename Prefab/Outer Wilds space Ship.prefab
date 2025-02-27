@@ -1156,6 +1156,7 @@ MonoBehaviour:
   m_forceModeSide: 5
   m_rotationForce: 20
   m_forceRotation: 5
+  m_forwardMultiplicator: 2.5
   m_leftBackForwardForce: 0
   m_rightBackForwardForce: 0
   m_leftRightHorizontalRotation: 0

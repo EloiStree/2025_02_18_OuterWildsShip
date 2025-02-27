@@ -15,6 +15,7 @@ public class OuterMono_ApplyForceToShip: MonoBehaviour {
     public float m_rotationForce = 2;
     public ForceMode m_forceRotation = ForceMode.Impulse;
 
+    public float m_forwardMultiplicator=2.5f;
 
     public float m_leftBackForwardForce = 0;
     public float m_rightBackForwardForce = 0;
@@ -57,7 +58,7 @@ public class OuterMono_ApplyForceToShip: MonoBehaviour {
 
         m_quadraForwardForce = m_leftBackForwardForce + m_rightBackForwardForce ;
         if (m_useVelocity)
-            r.AddRelativeForce(new Vector3(0, 0, 1) * Time.deltaTime * m_quadraForwardForce * m_leftRightForce, m_forceModeSide);
+            r.AddRelativeForce(new Vector3(0, 0, 1) * Time.deltaTime * m_quadraForwardForce*m_forwardMultiplicator * m_leftRightForce, m_forceModeSide);
 
         m_quadraUpForce = m_leftDownTopForce + m_rightDownTopForce;
         if (m_useVelocity)
